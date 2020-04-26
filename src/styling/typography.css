@@ -1,0 +1,33 @@
+h1.header-font {
+  font-family: "Helvetica Neue";
+  font-size: 30px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3.sub-header-font {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  font-size: 25px;
+  font-variant: normal;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  h1.main-header-font {
+    font-size: 50px;
+  }
+}
+
+/* Mobile Fonts */
+
+@media (max-width: 576px) {
+  h3.sub-header-font {
+    font-size: 20px;
+  }
+
+  p.paragraph-font {
+    font-size: 12px;
+  }
+}
