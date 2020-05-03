@@ -13,7 +13,7 @@ export default function PlaylistNinja() {
             className="mb-3"
           />
           <h3 className="sub-header-font">Personal Project - React Web App</h3>
-          <a href="https://playlistninja.app">
+          <a href="https://playlistninja.app" target="_blank">
             <p className="paragraph-font">LIVE WEB APP</p>
           </a>
           <p className="paragraph-font">

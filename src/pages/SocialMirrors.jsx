@@ -15,7 +15,7 @@ export default function SocialMirrors() {
           <h3 className="sub-header-font">
             Design Class Project - Design Values
           </h3>
-          <a href="https://socialmirrors.dev">
+          <a href="https://socialmirrors.dev" target="_blank">
             <p className="paragraph-font">LIVE WEBSITE</p>
           </a>
           <p className="paragraph-font">

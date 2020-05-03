@@ -15,7 +15,10 @@ export default function StewardshipApp() {
           <h3 className="sub-header-font">
             Design Class Project - Product Design
           </h3>
-          <a href="https://docs.google.com/document/d/1hdIJdnPz4SPoB6T_ACqLxtT0KiDcqktUlWYtKQBGDoY/edit?usp=sharing">
+          <a
+            href="https://docs.google.com/document/d/1hdIJdnPz4SPoB6T_ACqLxtT0KiDcqktUlWYtKQBGDoY/edit?usp=sharing"
+            target="_blank"
+          >
             <p className="paragraph-font">PROJECT DOCUMENTATION</p>
           </a>
           <p className="paragraph-font">

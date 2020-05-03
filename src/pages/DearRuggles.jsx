@@ -15,7 +15,10 @@ export default function DearRuggles() {
           <h3 className="sub-header-font">
             Design Class Project - Site Specificity
           </h3>
-          <a href="https://drive.google.com/file/d/1VE3imxq1TmOlHe1I0k4WtRUfC_I1Zt5J/view?usp=sharing">
+          <a
+            href="https://drive.google.com/file/d/1VE3imxq1TmOlHe1I0k4WtRUfC_I1Zt5J/view?usp=sharing"
+            target="_blank"
+          >
             <p className="paragraph-font">PROJECT DOCUMENTATION</p>
           </a>
           <p className="paragraph-font">
