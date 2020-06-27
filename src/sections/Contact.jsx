@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 export default class Contact extends Component {
   render() {
     return (
-      <div>
+      <div id="contact-section">
         <Row className="mb-5">
           <Col xs={12}>
             <h1 className="header-font">GET IN TOUCH</h1>

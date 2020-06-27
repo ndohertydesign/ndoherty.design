@@ -1,7 +1,19 @@
 import React, { Component } from "react";
 import { Row, Col, Image } from "react-bootstrap";
+import $ from "jquery";
 
 export default class ScrollingHeader extends Component {
+  componentDidMount() {
+    $("#contact-scroll-button").click(function () {
+      $("html, body").animate(
+        {
+          scrollTop: $("#contact-section").offset().top,
+        },
+        3000
+      );
+    });
+  }
+
   render() {
     return (
       <Row className="mb-5">
@@ -12,14 +24,8 @@ export default class ScrollingHeader extends Component {
             className="header-img"
             src="/assets/img/sticky-header-img.png"
           ></Image>
-          <div className="text-right py-2">
-            <a
-              className="custom-primary-btn"
-              href="https://shop.ndoherty.design"
-              target="_blank"
-            >
-              SHOP NDOHERTY.DESIGN
-            </a>
+          <div id="contact-scroll-button" className="text-right py-2">
+            <span className="custom-primary-btn">GET IN TOUCH</span>
           </div>
         </Col>
         <Col className="p-3 scrolling-col" xs={12} md={4}>

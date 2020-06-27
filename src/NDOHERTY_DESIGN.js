@@ -15,14 +15,16 @@ import StewardshipApp from "./pages/StewardshipApp";
 import MusicArtistCollages from "./pages/MusicArtistCollages";
 
 function NDOHERTY_DESIGN() {
-  window.addEventListener("hashchange", () => {
+  const scrollFunction = function () {
     window.scrollTo(0, 0);
-  });
+  };
+
+  window.addEventListener("hashchange", scrollFunction);
+  window.addEventListener("beforeunload", scrollFunction);
 
   return (
     <Container className="mt-3">
       <Router>
-        {" "}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/dear-ruggles" component={DearRuggles} />

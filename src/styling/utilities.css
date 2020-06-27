@@ -1,6 +1,6 @@
 /* Button styling */
 
-a.custom-primary-btn {
+.custom-primary-btn {
   color: #ffc107;
   border: solid #ffc107 1px;
   border-radius: 0.25rem;
@@ -10,9 +10,10 @@ a.custom-primary-btn {
   height: fit-content;
 }
 
-a.custom-primary-btn:hover {
+.custom-primary-btn:hover {
   background-color: #ffc10733;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* ----------------- */
