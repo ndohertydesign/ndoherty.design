@@ -17,7 +17,7 @@ export default class compositionExerciseCritiquePost extends Component {
           <Col className="sticky-col p-3" sm={12} md={7}>
             <Image
               fluid
-              src="/assets/img/blog/composition-exercise/composition-critique.jpg"
+              src="https://ik.imagekit.io/ndohertydesign/blog-media/composition-critique_H8apo5hsHP.jpg"
             />
           </Col>
           <Col className="p-3 scrolling-col" xs={12} md={5}>

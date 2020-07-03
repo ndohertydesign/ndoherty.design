@@ -9,7 +9,7 @@ export default function DearRuggles() {
         <Col xs={12}>
           <Image
             fluid
-            src="/assets/img/dear-ruggles/screen1.png"
+            src="https://ik.imagekit.io/ndohertydesign/dear-ruggles/screen1_zc1m1xDGJEB.png"
             className="mb-3"
           />
           <h3 className="sub-header-font">
@@ -39,7 +39,7 @@ export default function DearRuggles() {
         <Col xs={12} md={9}>
           <Image
             fluid
-            src="/assets/img/dear-ruggles/screen2.png"
+            src="https://ik.imagekit.io/ndohertydesign/dear-ruggles/screen2_EN3JysWxyQ.png"
             className="mb-3"
           />
         </Col>
@@ -65,12 +65,12 @@ export default function DearRuggles() {
 
           <Image
             fluid
-            src="/assets/img/dear-ruggles/screen3.png"
+            src="https://ik.imagekit.io/ndohertydesign/dear-ruggles/screen3_S5l-WxNJ1YH.png"
             className="mb-3"
           />
           <Image
             fluid
-            src="/assets/img/dear-ruggles/sketch-process.png"
+            src="https://ik.imagekit.io/ndohertydesign/dear-ruggles/sketch-process_UsOxs1-kl.png"
             className="mb-3"
           />
         </Col>

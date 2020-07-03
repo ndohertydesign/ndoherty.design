@@ -9,7 +9,7 @@ export default function SocialMirrors() {
         <Col xs={12}>
           <Image
             fluid
-            src="/assets/img/social-mirrors/website-top.png"
+            src="https://ik.imagekit.io/ndohertydesign/social-mirrors/website-top_Ma_HZUjP5ot.png"
             className="mb-3"
           />
           <h3 className="sub-header-font">
@@ -38,7 +38,7 @@ export default function SocialMirrors() {
         <Col xs={12} md={9}>
           <Image
             fluid
-            src="/assets/img/social-mirrors/features.png"
+            src="https://ik.imagekit.io/ndohertydesign/social-mirrors/features_RVcUS-MON4.png"
             className="mb-3"
           />
         </Col>
@@ -61,7 +61,7 @@ export default function SocialMirrors() {
 
           <Image
             fluid
-            src="/assets/img/social-mirrors/waitlist.png"
+            src="https://ik.imagekit.io/ndohertydesign/social-mirrors/waitlist_KZTEmgqKo.png"
             className="mb-3"
           />
         </Col>

@@ -9,7 +9,7 @@ export default function MusicArtistCollages() {
         <Col xs={12}>
           <Image
             fluid
-            src="/assets/img/artist-collages/asap-rocky.jpeg"
+            src="https://ik.imagekit.io/ndohertydesign/artist-collages/asap-rocky_xgyDu-a6X2x.jpeg"
             className="mb-3"
           />
           <h3 className="sub-header-font">
@@ -29,7 +29,7 @@ export default function MusicArtistCollages() {
         <Col xs={12} md={8} className="flex-center-content">
           <Image
             fluid
-            src="/assets/img/artist-collages/eden.jpg"
+            src="https://ik.imagekit.io/ndohertydesign/artist-collages/eden_P2trX1NpP4.jpg"
             className="mb-3"
           />
         </Col>
@@ -66,7 +66,7 @@ export default function MusicArtistCollages() {
         <Col xs={12} md={8} className="flex-center-content">
           <Image
             fluid
-            src="/assets/img/artist-collages/asap-rocky.jpeg"
+            src="https://ik.imagekit.io/ndohertydesign/artist-collages/asap-rocky_xgyDu-a6X2x.jpeg"
             className="mb-3"
           />
         </Col>
@@ -76,7 +76,7 @@ export default function MusicArtistCollages() {
         <Col xs={12} md={8} className="flex-center-content">
           <Image
             fluid
-            src="/assets/img/artist-collages/kanye.jpeg"
+            src="https://ik.imagekit.io/ndohertydesign/artist-collages/kanye_ZtYRgOE1GPL.jpeg"
             className="mb-3"
           />
         </Col>
@@ -115,7 +115,7 @@ export default function MusicArtistCollages() {
         <Col xs={12} md={8} className="flex-center-content">
           <Image
             fluid
-            src="/assets/img/artist-collages/crywolf.jpeg"
+            src="https://ik.imagekit.io/ndohertydesign/artist-collages/crywolf_BB9-Ha-zihM.jpeg"
             className="mb-3"
           />
         </Col>
@@ -125,7 +125,7 @@ export default function MusicArtistCollages() {
         <Col xs={12} md={8} className="flex-center-content">
           <Image
             fluid
-            src="/assets/img/artist-collages/mac-miller.jpeg"
+            src="https://ik.imagekit.io/ndohertydesign/artist-collages/mac-miller_jnE9DtknGO.jpeg"
             className="mb-3"
           />
         </Col>
@@ -136,11 +136,12 @@ export default function MusicArtistCollages() {
               Mac Miller is another rapper inspiration for me, who I really came
               to like during summer 2018. He ended up overdosing about a month
               or two after I started listening to him which, while unfortunate,
-              cemented him in my mind as an influential artist and made me go
-              back and explore some of his music. Obviously, there hasn't been
-              any social media posts from him since his passing about a year
-              ago, so the collage has more empty space, but it adds to the focus
-              of the quotes and how Mac Miller carried himself.
+              cemented him in my mind as an influential artist after seeing the
+              response and made me go back and explore some of his music.
+              Obviously, there hasn't been any social media posts from him since
+              his passing about a year ago, so the collage has more empty space,
+              but it adds to the focus of the quotes and how Mac Miller carried
+              himself.
             </p>
           </div>
         </Col>

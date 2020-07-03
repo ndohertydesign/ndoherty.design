@@ -9,7 +9,7 @@ export default function PlaylistNinja() {
         <Col xs={12}>
           <Image
             fluid
-            src="/assets/img/playlist-ninja/playlist-stats.png"
+            src="https://ik.imagekit.io/ndohertydesign/playlist-ninja/playlist-stats_uvwtyLT2VF.png"
             className="mb-3"
           />
           <h3 className="sub-header-font">Personal Project - React Web App</h3>
@@ -51,12 +51,12 @@ export default function PlaylistNinja() {
 
           <Image
             fluid
-            src="/assets/img/playlist-ninja/playlists.png"
+            src="https://ik.imagekit.io/ndohertydesign/playlist-ninja/playlists_3LSrm_6il_.png"
             className="mb-3"
           />
           <Image
             fluid
-            src="/assets/img/playlist-ninja/top-artists-tracks.png"
+            src="https://ik.imagekit.io/ndohertydesign/playlist-ninja/top-artists-tracks_wlKxDKXFd9.png"
             className="mb-3"
           />
         </Col>

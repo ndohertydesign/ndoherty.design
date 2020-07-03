@@ -22,7 +22,7 @@ export default class ScrollingHeader extends Component {
           <Image
             fluid
             className="header-img"
-            src="/assets/img/sticky-header-img.png"
+            src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_hnwd08NSiI.png"
           ></Image>
           <div id="contact-scroll-button" className="text-right py-2">
             <span className="custom-primary-btn">GET IN TOUCH</span>

@@ -12,7 +12,7 @@ export default function OtherProjects() {
         </Col>
       </Row>
       <Row className="mb-5">
-        <Card imgSrc="/assets/img/playlist-ninja.jpg">
+        <Card imgSrc="https://ik.imagekit.io/ndohertydesign/playlist-ninja_A3MdKmuE6C.jpg">
           <h3 className="sub-header-font">Playlist Ninja</h3>
           <p className="paragraph-font">
             A React app built using the Spotify Web API that allows better
@@ -27,7 +27,7 @@ export default function OtherProjects() {
           </Link>
         </Card>
 
-        <Card imgSrc="/assets/img/social-mirrors.jpg">
+        <Card imgSrc="https://ik.imagekit.io/ndohertydesign/social-mirrors_z4fnH0TxX.jpg">
           <h3 className="sub-header-font">Social Mirrors</h3>
           <p className="paragraph-font">
             A design project and website exploring fictional product in order to
@@ -41,7 +41,7 @@ export default function OtherProjects() {
           </Link>
         </Card>
 
-        <Card imgSrc="/assets/img/stewardship-app.jpg">
+        <Card imgSrc="https://ik.imagekit.io/ndohertydesign/stewardship-app_9aC6jYyCyR.jpg">
           <h3 className="sub-header-font">Stewardship App</h3>
           <p className="paragraph-font">
             An app designed to promote stewardship across the general population

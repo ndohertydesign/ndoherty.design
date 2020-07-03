@@ -13,7 +13,7 @@ export default class FeaturedProjects extends Component {
           </Col>
         </Row>
 
-        <SideScrollingRow imgSrc="/assets/img/rocky-featured-project-img.png">
+        <SideScrollingRow imgSrc="https://ik.imagekit.io/ndohertydesign/rocky-featured-project-img_ImfCg8ULWj.png">
           <div className="p-1 mobile-side-scroll-text-wrapper">
             <h3 className="sub-header-font">
               Music Artist Experience Collages
@@ -34,7 +34,10 @@ export default class FeaturedProjects extends Component {
           </div>
         </SideScrollingRow>
 
-        <SideScrollingRow imgRight={true} imgSrc="/assets/img/dear-ruggles.png">
+        <SideScrollingRow
+          imgRight={true}
+          imgSrc="https://ik.imagekit.io/ndohertydesign/dear-ruggles_225cxmz12aN.png"
+        >
           <div className="p-1 mobile-side-scroll-text-wrapper">
             <h3 className="sub-header-font">Dear Ruggles</h3>
             <p className="paragraph-font">

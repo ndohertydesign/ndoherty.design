@@ -9,7 +9,7 @@ export default function StewardshipApp() {
         <Col xs={12}>
           <Image
             fluid
-            src="/assets/img/stewardship-app/storyboard.png"
+            src="https://ik.imagekit.io/ndohertydesign/stewardship-app/storyboard_zV2JLbmS5.png"
             className="mb-3"
           />
           <h3 className="sub-header-font">
@@ -50,7 +50,7 @@ export default function StewardshipApp() {
         <Col xs={12} md={6} className="flex-center-content">
           <Image
             fluid
-            src="/assets/img/stewardship-app/storyboard2.png"
+            src="https://ik.imagekit.io/ndohertydesign/stewardship-app/storyboard2_2k_6RG7LvU.png"
             className="mb-3"
           />
         </Col>
@@ -137,7 +137,7 @@ export default function StewardshipApp() {
 
           <Image
             fluid
-            src="/assets/img/stewardship-app/badges.jpg"
+            src="https://ik.imagekit.io/ndohertydesign/stewardship-app/badges_sIERJYiYlk.jpg"
             className="mb-3"
           />
         </Col>
