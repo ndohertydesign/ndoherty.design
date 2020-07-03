@@ -14,9 +14,24 @@
   background-color: #ffc10733;
   text-decoration: none;
   cursor: pointer;
+  color: #ffc107;
 }
 
 /* ----------------- */
+
+.blog-title-select {
+  max-width: 150px;
+}
+
+.blog-title-select:hover {
+  cursor: pointer;
+  color: #ffc107;
+}
+
+.blog-image-lg {
+  max-height: 75vh;
+  width: auto;
+}
 
 .footer {
   display: flex;

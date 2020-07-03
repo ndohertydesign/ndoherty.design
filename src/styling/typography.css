@@ -14,6 +14,15 @@ h3.sub-header-font {
   font-weight: 700;
 }
 
+h3.sub-header-font.blog-title {
+  font-size: 15px;
+}
+
+p.blog-date-header {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
 @media (min-width: 768px) {
   h1.main-header-font {
     font-size: 50px;
@@ -24,6 +33,14 @@ h3.sub-header-font {
 
 @media (max-width: 576px) {
   h3.sub-header-font {
+    font-size: 20px;
+  }
+
+  h1.header-font {
+    font-size: 25px;
+  }
+
+  h1.header-font.blog-title {
     font-size: 20px;
   }
 

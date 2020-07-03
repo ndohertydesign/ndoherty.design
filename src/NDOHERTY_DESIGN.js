@@ -13,6 +13,7 @@ import SocialMirrors from "./pages/SocialMirrors";
 import PlaylistNinja from "./pages/PlaylistNinja";
 import StewardshipApp from "./pages/StewardshipApp";
 import MusicArtistCollages from "./pages/MusicArtistCollages";
+import Blog from "./components/blog/Blog";
 
 function NDOHERTY_DESIGN() {
   const scrollFunction = function () {
@@ -36,6 +37,7 @@ function NDOHERTY_DESIGN() {
             path="/artist-collages"
             component={MusicArtistCollages}
           />
+          <Route exact path="/blog" component={Blog} />
         </Switch>
       </Router>
       <Footer />
