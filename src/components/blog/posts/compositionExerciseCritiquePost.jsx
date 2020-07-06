@@ -5,14 +5,7 @@ import { Image, Row, Col } from "react-bootstrap";
 export default class compositionExerciseCritiquePost extends Component {
   render() {
     return (
-      <BlogPost>
-        <Row>
-          <Col>
-            <h1 className="header-font mb-0">Composition Exercise Critique</h1>
-            <p className="paragraph-font">07/02/2020</p>
-            <br />
-          </Col>
-        </Row>
+      <BlogPost title="Composition Exercise Critique" date="07/02/2020">
         <Row>
           <Col className="sticky-col p-3" sm={12} md={7}>
             <Image
