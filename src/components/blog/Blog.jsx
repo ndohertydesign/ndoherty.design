@@ -45,7 +45,11 @@ export default class Blog extends Component {
               {BlogPostList.map((blogPost) => {
                 return (
                   <div
-                    className="text-center mx-3 blog-title-select"
+                    className={`text-center mx-3 blog-title-select${
+                      this.state.currentBlogPost == blogPost.componentCode
+                        ? " blog-title-selected"
+                        : ""
+                    }`}
                     onClick={() => {
                       this.setState({
                         ...this.state,

@@ -28,6 +28,10 @@
   color: #ffc107;
 }
 
+.blog-title-selected {
+  color: #ffc107;
+}
+
 .blog-image-lg {
   max-height: 75vh;
   width: auto;
