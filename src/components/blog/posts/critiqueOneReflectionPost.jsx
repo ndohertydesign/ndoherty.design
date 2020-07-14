@@ -3,7 +3,7 @@ import BlogPost from "../BlogPost";
 
 export default function critiqueOneReflectionPost() {
   return (
-    <BlogPost title="Critique 1 Reflection" date="07/06/20">
+    <BlogPost title="Critique 1 Reflection: Composition" date="07/06/20">
       In this critique I learned a lot about the creation of tension versus
       harmony in compositions. Basically how different types of shapes & lines
       interact with the other elements in the composition to create action and
