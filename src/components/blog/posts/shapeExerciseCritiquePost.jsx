@@ -5,7 +5,7 @@ import { Image, Row, Col } from "react-bootstrap";
 export default class shapeExerciseCritiquePost extends Component {
   render() {
     return (
-      <BlogPost title="Shape Exercise Critique" date="07/02/2020">
+      <BlogPost title="Shape Exercise Critique" date="07/16/2020">
         <Row>
           <Col className="sticky-col p-3" sm={12} md={7}>
             <Image
