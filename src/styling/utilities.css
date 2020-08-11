@@ -42,6 +42,15 @@
   justify-content: center;
 }
 
+.background {
+  background-image: url("/assets/stripes-light/stripes-light.png");
+  background-repeat: repeat;
+}
+
+.background-none {
+  background: none;
+}
+
 .social-icon {
   margin: 0.5rem;
   color: black;

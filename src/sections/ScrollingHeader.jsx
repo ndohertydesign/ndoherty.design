@@ -9,7 +9,7 @@ export default class ScrollingHeader extends Component {
         {
           scrollTop: $("#contact-section").offset().top,
         },
-        3000
+        2000
       );
     });
   }
@@ -24,44 +24,64 @@ export default class ScrollingHeader extends Component {
             className="header-img"
             src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_hnwd08NSiI.png"
           ></Image>
-          <div id="contact-scroll-button" className="text-right py-2">
-            <span className="custom-primary-btn">GET IN TOUCH</span>
-          </div>
         </Col>
         <Col className="p-3 scrolling-col" xs={12} md={4}>
           <div className="mb-5 p-1">
             <h3 className="sub-header-font">Who am I?</h3>
+            <p className="paragraph-font mb-1"></p>
             <p className="paragraph-font">
-              I'm Nick Doherty, a freelance designer and developer currently in
-              my third year at Northeastern University, where I am working on a
-              Computer Science / Design combined degree. Right now, I work at
-              Catalant Technologies as a software engineering co-op through my
-              school. Some of my hobbies are skateboarding, customizing
-              clothing, and making sketches/graphics.
+              I'm <strong>Nick Doherty</strong>, a designer and developer in my
+              fourth year at Northeastern University. I am working towards a
+              Computer Science / Design combined degree and plan to graduate in
+              December 2021.
             </p>
           </div>
           <div className="my-5 p-1">
             <h3 className="sub-header-font">What do I do?</h3>
+            <p className="paragraph-font mb-1">
+              I've worked in software engineering at Catalant Technologies in
+              2020 and Skillz in 2019 doing full-stack development at both
+              companies. Some technologies and programming languages I've worked
+              professionally with are:
+            </p>
+            <p className="paragraph-font mb-1">
+              <strong>Javascript</strong> (React, JQuery)
+            </p>
+            <p className="paragraph-font mb-1">
+              <strong>Python</strong> (Flask, Jinja)
+            </p>
+            <p className="paragraph-font mb-4">
+              <strong>Ruby</strong> (Ruby on Rails)
+            </p>
             <p className="paragraph-font">
-              Most of my work is typically custom website design and
-              development. I have done portfolio websites for designers to
-              showcase their projects as well as integrating online ordering
-              into a restaurants' existing website. I've been exploring making
-              custom clothing as well as some other fun items to sell on my
-              shop, so I also have that in the works.
+              I also do freelance web design & development. I design and build
+              custom websites for clients, whether they are a small business
+              looking for an online presence or an artist who needs a portfolio
+              built.
             </p>
           </div>
           <div className="mt-5 p-1">
             <h3 className="sub-header-font">How can I help you?</h3>
-            <p className="paragraph-font">
-              If you have a website for your business that you've been meaning
-              to update or need to integrate a new feature like online ordering,
-              we can work together to find a solution that works well for your
-              existing workflow. If you're a student looking for a way to
-              display the projects you've been working on at school or on your
-              own time, we can work together to design a portfolio site that
-              captivates the attention of potential employers.
+            <p className="paragraph-font mb-0">
+              <strong>If you're looking to have a website created</strong>
             </p>
+            <p className="paragraph-font">
+              Whether it's going to be your art portfolio or a small business or
+              something entirely different, I'm your guy! I can create fully
+              custom websites and help you save on web hosting costs.
+            </p>
+            <p className="paragraph-font mb-0">
+              <strong>If you already have a website</strong>
+            </p>
+            <p className="paragraph-font">
+              Maybe you feel like it's missing something, a certain feature, an
+              aesthetic that you're trying to capture, or something else. I'd
+              love to hear about it and work with you to find the best solution
+              for your case.
+            </p>
+            <div id="contact-scroll-button" className="py-1">
+              <span className="custom-primary-btn">GET IN TOUCH</span>
+            </div>
           </div>
         </Col>
       </Row>
