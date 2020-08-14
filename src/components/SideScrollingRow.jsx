@@ -10,7 +10,25 @@ export default class SideScrollingRow extends Component {
             this.props.imgRight ? "row-reverse" : ""
           }`}
         >
-          <Col className="mobile-side-scroll-img-col sticky-col" xs={8}>
+          <Col
+            className={`mobile-side-scroll-img-col sticky-col p-0 ${
+              this.props.imgRight
+                ? "desktop-margin-left"
+                : "desktop-margin-right"
+            }`}
+            xs={8}
+          >
+            <div
+              className="w-100 h-100"
+              style={{
+                zIndex: "-1",
+                position: "absolute",
+                left: `${this.props.imgRight ? "-2rem" : "2rem"}`,
+                top: "2rem",
+                backgroundColor: "#ffc107",
+                opacity: "80%",
+              }}
+            ></div>
             <Image
               fluid
               className="feature-img mobile-side-scroll-img"

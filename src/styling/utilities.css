@@ -92,6 +92,10 @@
   margin-left: 2rem;
 }
 
+.desktop-margin-right {
+  margin-right: 2rem;
+}
+
 @media (min-width: 768px) {
   .sticky-col {
     position: sticky;
@@ -140,5 +144,9 @@
 
   .desktop-margin-left {
     margin-left: 0rem;
+  }
+
+  .desktop-margin-right {
+    margin-right: 0rem;
   }
 }

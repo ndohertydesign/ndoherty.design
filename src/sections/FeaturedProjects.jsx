@@ -33,7 +33,7 @@ export default class FeaturedProjects extends Component {
             </Link>
           </div>
         </SideScrollingRow>
-        <div style={{ height: "3rem" }} />
+        <div style={{ height: "10rem" }} />
         <SideScrollingRow
           imgRight={true}
           imgSrc="https://ik.imagekit.io/ndohertydesign/dear-ruggles_225cxmz12aN.png"
