@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 export default function OtherProjects() {
   return (
-    <div>
-      <Row className="mt-5">
+    <div className="py-5">
+      <Row>
         <Col xs={12}>
           <h1 className="header-font">OTHER PROJECTS</h1>
         </Col>
       </Row>
-      <Row className="mb-5">
+      <Row>
         <Card imgSrc="https://ik.imagekit.io/ndohertydesign/playlist-ninja_A3MdKmuE6C.jpg">
           <h3 className="sub-header-font">Playlist Ninja</h3>
           <p className="paragraph-font">

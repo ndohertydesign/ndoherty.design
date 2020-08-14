@@ -4,13 +4,13 @@ import { Row, Col } from "react-bootstrap";
 export default class DesignServices extends Component {
   render() {
     return (
-      <div>
-        <Row className="mt-5">
+      <div className="py-5">
+        <Row>
           <Col xs={12}>
             <h1 className="header-font">DESIGN SERVICES</h1>
           </Col>
         </Row>
-        <Row className="mb-5">
+        <Row>
           <Col className="p-3" sm={12} md={6}>
             <h3 className="sub-header-font">Websites</h3>
             <p className="paragraph-font">

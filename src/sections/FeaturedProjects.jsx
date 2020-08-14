@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default class FeaturedProjects extends Component {
   render() {
     return (
-      <div>
+      <div className="py-5">
         <Row className="mt-5">
           <Col xs={12}>
             <h1 className="header-font">FEATURED PROJECTS</h1>
@@ -33,7 +33,7 @@ export default class FeaturedProjects extends Component {
             </Link>
           </div>
         </SideScrollingRow>
-
+        <div style={{ height: "3rem" }} />
         <SideScrollingRow
           imgRight={true}
           imgSrc="https://ik.imagekit.io/ndohertydesign/dear-ruggles_225cxmz12aN.png"

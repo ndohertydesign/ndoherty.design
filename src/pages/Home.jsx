@@ -10,8 +10,8 @@ export default function Home() {
     <div>
       <ScrollingHeader />
       <FeaturedProjects />
-      <OtherProjects />
       <DesignServices />
+      <OtherProjects />
       <Contact />
     </div>
   );
