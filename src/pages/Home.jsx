@@ -10,7 +10,6 @@ export default function Home() {
     <div>
       <ScrollingHeader />
       <FeaturedProjects />
-      <DesignServices />
       <OtherProjects />
       <Contact />
     </div>
