@@ -81,7 +81,7 @@ export default class ScrollingHeader extends Component {
               with you to find a great solution.
             </p>
             <div id="contact-scroll-button" className="py-1">
-              <span className="custom-primary-btn">GET IN TOUCH</span>
+              <span className="custom-primary-btn">Schedule a free call!</span>
             </div>
           </div>
         </Col>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function OtherProjects() {
   return (
     <div className="py-5">
-      <Row>
+      <Row className="mt-5">
         <Col xs={12}>
           <h1 className="header-font">OTHER PROJECTS</h1>
         </Col>

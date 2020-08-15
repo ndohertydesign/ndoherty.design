@@ -23,6 +23,12 @@ p.blog-date-header {
   font-size: 12px;
 }
 
+.background-number-font {
+  font-size: 100px !important;
+  color: rgba(255, 193, 7, 0.7);
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   h1.main-header-font {
     font-size: 50px;

@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 
 export default function ProjectPage(props) {
   return (
-    <div>
+    <div className="pt-5">
       <Row>
         <Col xs={12}>
           <div className="flex-center-content justify-space-between">
