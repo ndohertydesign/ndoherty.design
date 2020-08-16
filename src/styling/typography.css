@@ -29,6 +29,15 @@ p.blog-date-header {
   margin: 0;
 }
 
+.swipe-interaction-font {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgba(50, 50, 50, 0.7);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 @media (min-width: 768px) {
   h1.main-header-font {
     font-size: 50px;

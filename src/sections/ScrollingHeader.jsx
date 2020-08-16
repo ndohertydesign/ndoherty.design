@@ -18,32 +18,37 @@ export default class ScrollingHeader extends Component {
     return (
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
-          <Image
-            className="pb-3 px-2"
-            src={"/NDOHERTY-DESIGN-HEADER@2x.png"}
-            fluid
-          />
-          <div style={{ position: "relative" }} className="desktop-margin-left">
-            <div
-              className="w-100 h-100"
-              style={{
-                zIndex: "-1",
-                position: "absolute",
-                left: "-2rem",
-                top: "2rem",
-                backgroundColor: "#ffc107",
-                opacity: "80%",
-              }}
-            ></div>
+          <div className="">
             <Image
+              className="pb-3 px-2"
+              src={"/NDOHERTY-DESIGN-HEADER@2x.png"}
               fluid
-              className="header-img"
-              src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_hnwd08NSiI.png"
-            ></Image>
+            />
+            <div
+              style={{ position: "relative" }}
+              className="yellow-bg-margin-left"
+            >
+              <div
+                className="w-100 h-100"
+                style={{
+                  position: "absolute",
+                  left: "-2rem",
+                  top: "2rem",
+                  backgroundColor: "#ffc107",
+                  opacity: "80%",
+                }}
+              ></div>
+              <Image
+                style={{ position: "relative", zIndex: "1" }}
+                fluid
+                className="header-img"
+                src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_hnwd08NSiI.png"
+              ></Image>
+            </div>
           </div>
         </Col>
         <Col className="p-3 scrolling-col" xs={12} md={4}>
-          <div className="mb-5 p-1 pt-3">
+          <div className="mb-5 p-1 pt-3 small-mb-mobile">
             <h3 className="sub-header-font">Who am I?</h3>
             <p className="paragraph-font mb-1"></p>
             <p className="paragraph-font">
@@ -52,7 +57,7 @@ export default class ScrollingHeader extends Component {
               Science / Design combined degree.
             </p>
           </div>
-          <div className="my-5 p-1">
+          <div className="mb-5 p-1 small-mb-mobile">
             <h3 className="sub-header-font">What do I do?</h3>
             <p className="paragraph-font mb-1">
               I've worked two software engineering jobs in the last two years.
@@ -73,7 +78,7 @@ export default class ScrollingHeader extends Component {
               websites for clients.
             </p>
           </div>
-          <div className="mt-5 p-1">
+          <div className="p-1">
             <h3 className="sub-header-font">How can I help you?</h3>
             <p className="paragraph-font">
               If you need a resume website for your job search or a portfolio to
