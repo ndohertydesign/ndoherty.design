@@ -18,7 +18,11 @@ export default class ScrollingHeader extends Component {
     return (
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
-          <h1 className="header-font">NDOHERTY.DESIGN</h1>
+          <Image
+            className="pb-3 px-2"
+            src={"/NDOHERTY-DESIGN-HEADER@2x.png"}
+            fluid
+          />
           <div style={{ position: "relative" }} className="desktop-margin-left">
             <div
               className="w-100 h-100"
