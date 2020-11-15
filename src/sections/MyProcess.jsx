@@ -29,7 +29,7 @@ export default class MyProcess extends Component {
                 <h3 className="sub-header-font background-number-font">01</h3>
               </div>
               <div className="stacking-div mt-1">
-                <h3 className="sub-header-font font-weight-bold">
+                <h3 className="sub-header-font font-weight-bold text-center">
                   UNDERSTANDING THE PROBLEM
                 </h3>
               </div>
@@ -50,7 +50,7 @@ export default class MyProcess extends Component {
                 <h3 className="sub-header-font background-number-font">02</h3>
               </div>
               <div className="stacking-div mt-1">
-                <h3 className="sub-header-font font-weight-bold">
+                <h3 className="sub-header-font font-weight-bold text-center">
                   CREATING A SOLUTION
                 </h3>
               </div>
@@ -71,7 +71,7 @@ export default class MyProcess extends Component {
                 <h3 className="sub-header-font background-number-font">03</h3>
               </div>
               <div className="stacking-div mt-1">
-                <h3 className="sub-header-font font-weight-bold">
+                <h3 className="sub-header-font font-weight-bold text-center">
                   DEVELOPMENT AND DELIVERY
                 </h3>
               </div>
@@ -92,7 +92,7 @@ export default class MyProcess extends Component {
         <Row className="mt-3">
           <Col xs={12} className="text-center">
             <div id="contact-scroll-button-2" className="py-1">
-              <span className="custom-primary-btn">Get a free assessment!</span>
+              <span className="custom-primary-btn">Get a free project estimation!</span>
             </div>
           </Col>
         </Row>
