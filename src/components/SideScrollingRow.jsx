@@ -4,7 +4,7 @@ import { Row, Col, Image } from "react-bootstrap";
 export default class SideScrollingRow extends Component {
   render() {
     return (
-      <Row className="mb-3 mobile-side-scroll-row">
+      <Row className="mobile-side-scroll-row" style={{marginBottom: "6rem"}}>
         <div
           className={`d-flex mobile-side-scroll-reverse ${
             this.props.imgRight ? "row-reverse" : ""
