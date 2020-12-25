@@ -12,20 +12,28 @@
   font-style: normal;
 }
 
-h1.header-font {
-  font-family: "Helvetica Neue";
-  font-size: 30px;
+.main-title {
+  font-family: hero-new, sans-serif;
+  font-weight: 900;
   font-style: italic;
+  font-size: 3.5rem;
+}
+
+h1.header-font {
+  font-family: hero-new, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
   font-variant: normal;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
 h3.sub-header-font {
-  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-  font-size: 25px;
-  font-variant: normal;
+  font-family: hero-new, sans-serif;
   font-weight: 700;
+  font-variant: normal;
+  font-style: normal;
+  font-size: 25px;
 }
 
 h3.sub-header-font.blog-title {
@@ -35,6 +43,12 @@ h3.sub-header-font.blog-title {
 p.blog-date-header {
   margin-top: 2px;
   font-size: 12px;
+}
+
+p.paragraph-font {
+  font-family: hero-new, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .background-number-font {
@@ -78,12 +92,12 @@ p.blog-date-header {
   }
 
   .main-title {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .main-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }

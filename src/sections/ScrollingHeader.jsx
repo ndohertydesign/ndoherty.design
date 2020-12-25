@@ -19,7 +19,7 @@ export default class ScrollingHeader extends Component {
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
           <div className="">
-            <h1 className="elektrix-bold display-2 text-center main-title">NDOHERTY.DESIGN</h1>
+            <h1 className="display-2 text-center main-title">NDOHERTY.DESIGN</h1>
             <div
               style={{ position: "relative" }}
               className="yellow-bg-margin-left"
