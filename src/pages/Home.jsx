@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     if (loading) {
-      fetch("http://ndohertydesign-api.herokuapp.com/ndohertydesign/dynamic-content/", {crossDomain: true})
+      fetch("https://ndohertydesign-api.herokuapp.com/ndohertydesign/dynamic-content/")
       .then((response) => response.json())
       .then((content) => {
         setDynamicContent(content)
