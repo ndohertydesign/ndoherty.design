@@ -98,6 +98,6 @@ p.paragraph-font {
 
 @media (min-width: 576px) and (max-width: 992px) {
   .main-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
