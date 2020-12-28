@@ -20,6 +20,14 @@ export default class FeaturedProjects extends Component {
                   >
                     <div className="p-1 mobile-side-scroll-text-wrapper">
                       <h3 className="sub-header-font">{projectInfo.name}</h3>
+                      <div className="d-flex flex-wrap">
+                        {projectInfo.tags.map((tag) => 
+                          <span style={{padding: ".1rem .3rem", marginRight: ".3rem", marginBottom: ".5rem", fontSize: "8pt", backgroundColor: "#333", color: "white", borderRadius: "4pt"}} >
+                            {tag}
+                          </span>
+                        )}
+                      </div>
+                     
                       <p className="paragraph-font">
                         {projectInfo.description}
                       </p>
