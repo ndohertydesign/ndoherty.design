@@ -4,16 +4,11 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { HashLoader } from "react-spinners/";
 
 import Home from "./pages/Home";
-import DearRuggles from "./pages/DearRuggles";
 import Footer from "./sections/Footer";
 
 import "./styling/typography.css";
 import "./styling/utilities.css";
 import "./styling/contact.css";
-import SocialMirrors from "./pages/SocialMirrors";
-import PlaylistNinja from "./pages/PlaylistNinja";
-import StewardshipApp from "./pages/StewardshipApp";
-import MusicArtistCollages from "./pages/MusicArtistCollages";
 import Blog from "./components/blog/Blog";
 import ProjectPage from "./components/ProjectPage";
 
@@ -30,7 +25,7 @@ function NDOHERTY_DESIGN() {
 
   useEffect(() => {
     if (loading) {
-      fetch("https://ndohertydesign-api.herokuapp.com/ndohertydesign/dynamic-content/")
+      fetch("http://localhost:5000/ndohertydesign/dynamic-content/")
       .then((response) => response.json())
       .then((content) => {
         setDynamicContent(content)
@@ -68,7 +63,7 @@ function NDOHERTY_DESIGN() {
                     exact={true}
                     path={projectContent.routinglink}
                     render={(props) => (
-                      <ProjectPage {...props} pageContent={projectContent.pageContent} title={projectContent.name}/>
+                      <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
                     )}/>)
           )}
 
@@ -77,7 +72,7 @@ function NDOHERTY_DESIGN() {
                     exact={true}
                     path={projectContent.routinglink}
                     render={(props) => (
-                      <ProjectPage {...props} pageContent={projectContent.pageContent} title={projectContent.name}/>
+                      <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
                     )}/>
           })}
         <Route exact path="/blog" component={Blog} /> 

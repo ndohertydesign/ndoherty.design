@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
+import { HashLoader } from "react-spinners/";
 
 export default function ProjectPage(props) {
+
+  const [pageContent, setPageContent] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (loading) {
+      fetch(`http://localhost:5000/getPageContent/${props.pageID}`)
+      .then((response) => response.json())
+      .then((content) => {
+        setPageContent(content)
+        setLoading(false)
+      })
+    }
+  });
+
+  if (loading) {
+    return <div style={{height: "100vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+              <div className="text-center">
+                <HashLoader
+                  size={100}
+                  color="#ffc107"
+                  loading={true}
+                />
+                <p className="mt-3 paragraph-font">Loading...</p>
+              </div>
+           </div>
+  }
+
   return (
     <div className="pt-5">
       <Row>
@@ -15,7 +44,7 @@ export default function ProjectPage(props) {
           <hr className="bg-dark" />
         </Col>
       </Row>
-      {props.pageContent.map((block) => {
+      {pageContent.map((block) => {
         if (block.type == "image") {
           return (<div className="w-100 text-center my-3">            
                     <Image fluid src={block.content} className="w-75" />
