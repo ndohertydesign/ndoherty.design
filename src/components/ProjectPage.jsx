@@ -9,7 +9,7 @@ export default function ProjectPage(props) {
 
   useEffect(() => {
     if (loading) {
-      fetch(`http://localhost:5000/getPageContent/${props.pageID}`)
+      fetch(`https://ndohertydesign-api.herokuapp.com/getPageContent/${props.pageID}`)
       .then((response) => response.json())
       .then((content) => {
         setPageContent(content)

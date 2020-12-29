@@ -25,7 +25,7 @@ function NDOHERTY_DESIGN() {
 
   useEffect(() => {
     if (loading) {
-      fetch("http://localhost:5000/ndohertydesign/dynamic-content/")
+      fetch("https://ndohertydesign-api.herokuapp.com/ndohertydesign/dynamic-content/")
       .then((response) => response.json())
       .then((content) => {
         setDynamicContent(content)
