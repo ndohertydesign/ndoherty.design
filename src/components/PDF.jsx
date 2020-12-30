@@ -47,6 +47,7 @@ export default function PDF(props) {
       return (<Document
                 file={props.fileURL}
                 onLoadSuccess={onDocumentLoadSuccess}
+                renderMode="svg"
               >
                 <Page pageNumber={pageNumber} width={width} />
               </Document>
