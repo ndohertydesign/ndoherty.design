@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { pdfjs, Document, Page } from 'react-pdf'
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
 export default function PDF(props) {
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
   let divRef = useRef(null)
 
