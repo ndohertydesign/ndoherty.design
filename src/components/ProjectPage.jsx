@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import { HashLoader } from "react-spinners/";
+import PDF from "./PDF";
 
 export default function ProjectPage(props) {
 
@@ -63,6 +64,8 @@ export default function ProjectPage(props) {
           return <a href={block.content}>{block.content}</a>
         } else if (block.type == "hr") {
           return <hr />
+        } else if (block.type == "pdf") {
+          return <PDF fileURL={block.content}></PDF>
         }
       })}
     </div>

@@ -1,7 +1,7 @@
 /* Button styling */
 
 .custom-primary-btn {
-  color: #ffc107;
+  color: #ffc107 !important;
   border: solid #ffc107 1px;
   border-radius: 0.25rem;
   width: fit-content;
@@ -14,10 +14,19 @@
   background-color: #ffc10733;
   text-decoration: none;
   cursor: pointer;
-  color: #ffc107;
+  color: #ffc107 !important;
 }
 
 /* ----------------- */
+
+.pdf-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  z-index: 100;
+  position: relative;
+}
 
 .blog-title-select {
   max-width: 150px;
