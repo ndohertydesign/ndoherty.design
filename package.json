@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "jquery": "^3.5.1",
     "react": "^16.13.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-mail-form": "^2.1.0",

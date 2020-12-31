@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import $ from "jquery";
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export default class ScrollingHeader extends Component {
   componentDidMount() {
@@ -19,7 +20,9 @@ export default class ScrollingHeader extends Component {
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
           <div className="">
-            <h1 className="display-2 text-center main-title">NDOHERTY.DESIGN</h1>
+            <ScrollAnimation animateIn='rollIn' animateOut='rollOut' offset={50}>
+              <h1 className="display-2 text-center main-title">NDOHERTY.DESIGN</h1>
+            </ScrollAnimation>
             <div
               style={{ position: "relative" }}
               className="yellow-bg-margin-left"
