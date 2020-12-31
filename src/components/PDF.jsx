@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack"
+import { Document, Page } from "react-pdf"
 
 export default function PDF(props) {
 
@@ -44,10 +44,10 @@ export default function PDF(props) {
       return (<Document
                 file={props.fileURL}
                 onLoadSuccess={onDocumentLoadSuccess}
-                onLoadError={(error) => console.error('Errored on Document: ' + error.message)}
+                options={{workerSrc: "pdf.worker.js"}}
                 renderMode="canvas"
               >
-                <Page pageNumber={pageNumber} width={width} onLoadError={(error) => console.error('Errored on Page: ' + error.message)} />
+                <Page pageNumber={pageNumber} width={width}/>
               </Document>
             )
     } else {
