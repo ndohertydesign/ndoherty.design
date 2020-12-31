@@ -14,18 +14,26 @@ export default function PDF(props) {
     setNumPages(numPages);
   }
 
+
   useEffect(() => {
     if (!mounted) {
       setMounted(true)
       setWidth(divRef.current.clientWidth)
     }
-  });
 
-  window.addEventListener("resize", () => {
-    if (mounted) {
-      setWidth(divRef.current.clientWidth)
+    window.addEventListener("resize", () => {
+      if (mounted) {
+        setWidth(divRef.current.clientWidth)
+      }
+    })
+  
+
+    // returned function will be called on component unmount 
+    return function cleanup() {
+      window.removeEventListener('resize', () => {})
+      setMounted(false)
     }
-  })
+  }, []);
 
   function changePage(direction) {
     if (direction == "next") {

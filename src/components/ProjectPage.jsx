@@ -45,29 +45,35 @@ export default function ProjectPage(props) {
           <hr className="bg-dark" />
         </Col>
       </Row>
-      {pageContent.map((block) => {
-        if (block.type == "image") {
-          return (<div className="w-100 text-center my-3">            
-                    <Image fluid src={block.content} className="w-75" />
-                  </div>)
-        } else if (block.type == "h1") {
-          return <h1 className="header-font">{block.content}</h1>
-        } else if (block.type == "h3") {
-          return <h3 className="sub-header-font">{block.content}</h3>
-        } else if (block.type == "p") {
-          return <p className="paragraph-font">{block.content}</p>
-        } else if (block.type == "br") {
-          return <br />
-        } else if (block.type == "p") {
-          return <p className="paragraph-font">{block.content}</p>
-        } else if (block.type == "a") {
-          return <a href={block.content}>{block.content}</a>
-        } else if (block.type == "hr") {
-          return <hr />
-        } else if (block.type == "pdf") {
-          return <PDF fileURL={block.content}></PDF>
-        }
-      })}
+      <Row>
+      <Col xs={0} lg={2} />
+      <Col xs={12} lg={8}>
+        {pageContent.map((block) => {
+          if (block.type == "image") {
+            return (<div className="w-100 text-center my-3">            
+                      <Image fluid src={block.content}  />
+                    </div>)
+          } else if (block.type == "h1") {
+            return <h1 className="header-font">{block.content}</h1>
+          } else if (block.type == "h3") {
+            return <h3 className="sub-header-font">{block.content}</h3>
+          } else if (block.type == "p") {
+            return <p className="paragraph-font">{block.content}</p>
+          } else if (block.type == "br") {
+            return <br />
+          } else if (block.type == "p") {
+            return <p className="paragraph-font">{block.content}</p>
+          } else if (block.type == "a") {
+            return <a href={block.content}>{block.content}</a>
+          } else if (block.type == "hr") {
+            return <hr />
+          } else if (block.type == "pdf") {
+            return <PDF fileURL={block.content}></PDF>
+          }
+        })}
+      </Col>
+      <Col xs={0} lg={2} />
+      </Row>
     </div>
   );
 }
