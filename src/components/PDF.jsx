@@ -44,6 +44,7 @@ export default function PDF(props) {
       return (<Document
                 file={props.fileURL}
                 onLoadSuccess={onDocumentLoadSuccess}
+                onLoadError={(error) => alert('Error while loading document! ' + error.message)}
                 renderMode="canvas"
               >
                 <Page pageNumber={pageNumber} width={width} />
