@@ -44,10 +44,10 @@ export default function PDF(props) {
       return (<Document
                 file={props.fileURL}
                 onLoadSuccess={onDocumentLoadSuccess}
-                onLoadError={(error) => alert('Error while loading document! ' + error.message)}
+                onLoadError={(error) => console.error('Errored on Document: ' + error.message)}
                 renderMode="canvas"
               >
-                <Page pageNumber={pageNumber} width={width} />
+                <Page pageNumber={pageNumber} width={width} onLoadError={(error) => console.error('Errored on Page: ' + error.message)} />
               </Document>
             )
     } else {
