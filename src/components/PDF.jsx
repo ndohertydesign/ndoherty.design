@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { pdfjs, Document, Page } from 'react-pdf'
-
-pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
-
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack"
 
 export default function PDF(props) {
 
@@ -47,7 +44,7 @@ export default function PDF(props) {
       return (<Document
                 file={props.fileURL}
                 onLoadSuccess={onDocumentLoadSuccess}
-                renderMode="svg"
+                renderMode="canvas"
               >
                 <Page pageNumber={pageNumber} width={width} />
               </Document>
