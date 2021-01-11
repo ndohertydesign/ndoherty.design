@@ -58,7 +58,7 @@ function NDOHERTY_DESIGN() {
             <Home {...props} dynamicContent={dynamicContent}/>
           )}/>
 
-          {dynamicContent.projects.featuredProjects.map((projectContent) => 
+          {dynamicContent.projects['Featured-Projects'].map((projectContent) => 
                   (<Route 
                     exact={true}
                     path={projectContent.routinglink}
@@ -67,7 +67,7 @@ function NDOHERTY_DESIGN() {
                     )}/>)
           )}
 
-          {dynamicContent.projects.projectTeasers.map((projectContent) => {
+          {dynamicContent.projects['Other-Projects'].map((projectContent) => {
             return <Route 
                     exact={true}
                     path={projectContent.routinglink}
