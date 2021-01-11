@@ -10,8 +10,8 @@ export default function Home(props) {
     <div>
       <ScrollingHeader introCopy={props.dynamicContent.intro_copy} />
       <MyProcess processCopy={props.dynamicContent.process_copy} />
-      <FeaturedProjects featuredProjects={props.dynamicContent.projects.featuredProjects} />
-      <OtherProjects projectTeasers={props.dynamicContent.projects.projectTeasers} />
+      <FeaturedProjects featuredProjects={props.dynamicContent.projects['Featured-Projects']} />
+      <OtherProjects projectTeasers={props.dynamicContent.projects['Other-Projects']} />
       <Contact />
     </div>
   );
