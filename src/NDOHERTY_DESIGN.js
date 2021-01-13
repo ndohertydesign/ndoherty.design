@@ -47,6 +47,9 @@ function NDOHERTY_DESIGN() {
            </div>
   }
 
+  dynamicContent.projects['Featured-Projects'] = dynamicContent.projects['Featured-Projects'].filter((project) => project.published)
+  dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project.published)
+
   return (
     <Container className="mt-3">
       <Router>
