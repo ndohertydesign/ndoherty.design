@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 export default class SideScrollingRow extends Component {
   render() {
     return (
-      <ScrollAnimation animateIn='headShake' animateOnce={true} initiallyVisible={true}>
+      <ScrollAnimation animateIn={this.props.imgRight ? 'slideInLeft' : 'slideInRight'} animateOnce={true} >
         <Row className="mobile-side-scroll-row" style={{marginBottom: "6rem"}}>
           <div
             className={`d-flex mobile-side-scroll-reverse ${

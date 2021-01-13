@@ -5,10 +5,10 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 export default class ScrollingHeader extends Component {
   componentDidMount() {
-    $("#contact-scroll-button").click(function () {
+    $("#process-scroll-button").click(function () {
       $("html, body").animate(
         {
-          scrollTop: $("#contact-section").offset().top,
+          scrollTop: $("#process-section").offset().top,
         },
         2000
       );
@@ -20,7 +20,7 @@ export default class ScrollingHeader extends Component {
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
           <div className="">
-            <ScrollAnimation animateIn='rollIn' animateOut='rollOut' offset={50}>
+            <ScrollAnimation animateIn='bounce' animateOut='bounce' offset={50}>
               <h1 className="display-2 text-center main-title">NDOHERTY.DESIGN</h1>
             </ScrollAnimation>
             <div
@@ -58,8 +58,8 @@ export default class ScrollingHeader extends Component {
           <div className="p-1">
             <h3 className="sub-header-font">How can I help you?</h3>
             {this.props.introCopy.howCanIHelpText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
-            <div id="contact-scroll-button" className="py-1">
-              <span className="custom-primary-btn">Schedule a free call!</span>
+            <div id="process-scroll-button" className="py-1">
+              <span className="custom-primary-btn">More about my freelancing!</span>
             </div>
           </div>
         </Col>

@@ -16,7 +16,7 @@ export default class MyProcess extends Component {
 
   render() {
     return (
-      <div className="py-5">
+      <div className="py-5" id="process-section">
         <Row className="mt-5">
           <Col xs={12} className="text-center">
             <h1 className="header-font">WHAT IS MY PROJECT PROCESS?</h1>
