@@ -19,10 +19,7 @@ export default class ScrollingHeader extends Component {
     return (
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
-          <div className="">
-            <ScrollAnimation animateIn='bounce' animateOut='bounce' offset={50}>
-              <h1 className="display-2 text-center main-title">NDOHERTY.DESIGN</h1>
-            </ScrollAnimation>
+          <div className="mt-5">
             <div
               style={{ position: "relative" }}
               className="yellow-bg-margin-left"
@@ -46,7 +43,7 @@ export default class ScrollingHeader extends Component {
             </div>
           </div>
         </Col>
-        <Col className="p-3 scrolling-col" xs={12} md={4}>
+        <Col className="mt-4 p-3 scrolling-col" xs={12} md={4}>
           <div className="mb-5 p-1 pt-3 small-mb-mobile">
             <h3 className="sub-header-font">Who am I?</h3>
             {this.props.introCopy.whoAmIText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}

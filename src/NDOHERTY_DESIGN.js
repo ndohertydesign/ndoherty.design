@@ -11,6 +11,7 @@ import "./styling/utilities.css";
 import "./styling/contact.css";
 import Blog from "./components/blog/Blog";
 import ProjectPage from "./components/ProjectPage";
+import Navbar from "./components/Navbar";
 
 function NDOHERTY_DESIGN() {
   const scrollFunction = function () {
@@ -51,7 +52,11 @@ function NDOHERTY_DESIGN() {
   dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project.published)
 
   return (
-    <Container className="mt-3">
+    <div>
+    <Navbar />
+
+    <Container className="mt-3 pt-3">
+     
       <Router>
         <Switch>
           <Route 
@@ -83,6 +88,7 @@ function NDOHERTY_DESIGN() {
       </Router>
       <Footer />
     </Container>
+    </div>
   );
 }
 

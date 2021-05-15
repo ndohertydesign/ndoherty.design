@@ -12,11 +12,18 @@
   font-style: normal;
 }
 
-.main-title {
+.main-title,
+.nav-title {
   font-family: hero-new, sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: 3.5rem;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  letter-spacing: 1pt;
+  margin: 0;
 }
 
 h1.header-font {
@@ -93,6 +100,12 @@ p.paragraph-font {
 
   .main-title {
     font-size: 1.7rem;
+  }
+
+  .nav-title {
+    font-size: 1.35rem;
+    letter-spacing: 0.75pt;
+    margin: 0;
   }
 }
 
