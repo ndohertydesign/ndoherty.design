@@ -38,7 +38,7 @@ export default class ScrollingHeader extends Component {
                 style={{ position: "relative", zIndex: "1" }}
                 fluid
                 className="header-img"
-                src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_sv3YeBXZE.png"
+                src="https://ik.imagekit.io/ndohertydesign/progress-perfection-posters_6NFrhhWaB.JPG"
              ></Image> 
             </div>
           </div>
