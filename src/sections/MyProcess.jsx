@@ -29,7 +29,7 @@ export default class MyProcess extends Component {
                 <h3 className="sub-header-font background-number-font">01</h3>
               </div>
               <div className="stacking-div mt-1">
-                <h3 className="sub-header-font font-weight-bold text-center">
+                <h3 className="sub-header-font font-weight-bold text-center hero-new">
                   {this.props.processCopy.step1Title}
                 </h3>
               </div>
@@ -46,7 +46,7 @@ export default class MyProcess extends Component {
                 <h3 className="sub-header-font background-number-font">02</h3>
               </div>
               <div className="stacking-div mt-1">
-                <h3 className="sub-header-font font-weight-bold text-center">
+                <h3 className="sub-header-font font-weight-bold text-center hero-new">
                   {this.props.processCopy.step2Title}
                 </h3>
               </div>
@@ -63,7 +63,7 @@ export default class MyProcess extends Component {
                 <h3 className="sub-header-font background-number-font">03</h3>
               </div>
               <div className="stacking-div mt-1">
-                <h3 className="sub-header-font font-weight-bold text-center">
+                <h3 className="sub-header-font font-weight-bold text-center hero-new">
                   {this.props.processCopy.step3Title}
                 </h3>
               </div>

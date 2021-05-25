@@ -12,32 +12,56 @@
   font-style: normal;
 }
 
+.didot-headline {
+  font-family: linotype-didot-headline, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.didot-bold {
+  font-family: linotype-didot, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hero-new {
+  font-family: hero-new, sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
 .main-title,
 .nav-title {
-  font-family: hero-new, sans-serif;
-  font-weight: 900;
-  font-style: italic;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 3.5rem;
 }
 
 .nav-title {
-  font-size: 1.5rem;
-  letter-spacing: 1pt;
+  font-size: 2rem;
+  letter-spacing: 2pt;
   margin: 0;
 }
 
 h1.header-font {
-  font-family: hero-new, sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 30px;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  margin-bottom: 12px;
   font-variant: normal;
+  letter-spacing: 2pt;
   text-transform: uppercase;
 }
 
 h3.sub-header-font {
-  font-family: hero-new, sans-serif;
-  font-weight: 700;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1pt;
   font-variant: normal;
   font-style: normal;
   font-size: 25px;
@@ -104,8 +128,9 @@ p.paragraph-font {
 
   .nav-title {
     font-size: 1.35rem;
-    letter-spacing: 0.75pt;
+    letter-spacing: 0.5pt;
     margin: 0;
+    margin-top: 2px;
   }
 }
 
