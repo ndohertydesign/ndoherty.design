@@ -19,7 +19,7 @@ export default class ScrollingHeader extends Component {
     return (
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
-          <div className="mt-5">
+          <div style={{ marginTop: "3.7rem" }}>
             <div
               style={{ position: "relative" }}
               className="yellow-bg-margin-left"
@@ -30,12 +30,12 @@ export default class ScrollingHeader extends Component {
                   position: "absolute",
                   left: "-2rem",
                   top: "2rem",
-                  backgroundColor: "#ffc107",
-                  opacity: "80%",
+                  backgroundColor: "black",
+                  opacity: "100%",
                 }}
               ></div>
               <Image
-                style={{ position: "relative", zIndex: "1" }}
+                style={{ position: "relative", zIndex: "1", border: "3px solid black"}}
                 fluid
                 className="header-img"
                 src="https://ik.imagekit.io/ndohertydesign/progress-perfection-posters_6NFrhhWaB.JPG"
@@ -44,14 +44,16 @@ export default class ScrollingHeader extends Component {
           </div>
         </Col>
         <Col className="mt-4 p-3 scrolling-col" xs={12} md={4}>
-          <div className="mb-5 p-1 pt-3 small-mb-mobile">
+          <div className="p-1 pt-3 mt-3 small-mb-mobile">
             <h3 className="sub-header-font">Who am I?</h3>
-            {this.props.introCopy.whoAmIText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
+            {this.props.introCopy.whoAmIText.split("\\n").map((text) => <p className="paragraph-font mb-0">{text}</p>)}
           </div>
-          <div className="mb-5 p-1 small-mb-mobile">
+          <hr className="divider" />
+          <div className="p-1 small-mb-mobile">
             <h3 className="sub-header-font">What do I do?</h3>
-              {this.props.introCopy.whatIDoText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
+              {this.props.introCopy.whatIDoText.split("\\n").map((text) => <p className="paragraph-font mb-0">{text}</p>)}
           </div>
+          <hr className="divider" />
           <div className="p-1">
             <h3 className="sub-header-font">How can I help you?</h3>
             {this.props.introCopy.howCanIHelpText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}

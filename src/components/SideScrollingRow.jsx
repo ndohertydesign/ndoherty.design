@@ -27,14 +27,15 @@ export default class SideScrollingRow extends Component {
                   position: "absolute",
                   left: `${this.props.imgRight ? "-2rem" : "2rem"}`,
                   top: "2rem",
-                  backgroundColor: "#ffc107",
-                  opacity: "80%",
+                  backgroundColor: "black",
+                  opacity: "100%",
                 }}
               ></div>
               <Image
                 fluid
                 className="feature-img mobile-side-scroll-img"
                 src={this.props.imgSrc}
+                style={{ border: "3px solid black" }}
               ></Image>
             </Col>
             <Col

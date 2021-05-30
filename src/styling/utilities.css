@@ -51,9 +51,11 @@
   justify-content: center;
 }
 
-.background {
-  background-image: url("https://ik.imagekit.io/ndohertydesign/stripes-light_BlCrA2O2U.png");
-  background-repeat: repeat;
+.divider {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 19px;
 }
 
 .background-none {
@@ -145,7 +147,7 @@
   }
 
   .scrolling-col {
-    border-left: 1px solid #343a40;
+    border-left: 3px solid #343a40;
   }
 
   .desktop-d-none {
