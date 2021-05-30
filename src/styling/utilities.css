@@ -54,7 +54,7 @@
 .divider {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
-  margin-top: 20px;
+  margin-top: calc(20px - 0.75rem);
   margin-bottom: 19px;
 }
 
