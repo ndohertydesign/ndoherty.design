@@ -17,6 +17,10 @@
   color: #ffc107 !important;
 }
 
+a.no-hover:hover {
+  text-decoration: none !important;
+}
+
 /* ----------------- */
 
 .pdf-controls {

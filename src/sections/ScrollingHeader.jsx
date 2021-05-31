@@ -21,12 +21,13 @@ export default class ScrollingHeader extends Component {
         <Col className="sticky-col p-3" sm={12} md={8}>
           <div style={{ marginTop: "3.7rem" }}>
             <div
-              style={{ position: "relative" }}
-              className="yellow-bg-margin-left"
+              style={{ position: "relative", border: "3px solid black", backgroundColor: "white", padding: "1.5rem" }}
+              className="yellow-bg-margin-left d-flex justify-space-between"
             >
               <div
                 className="w-100 h-100"
                 style={{
+                  zIndex: -1,
                   position: "absolute",
                   left: "-2rem",
                   top: "2rem",
@@ -34,12 +35,30 @@ export default class ScrollingHeader extends Component {
                   opacity: "100%",
                 }}
               ></div>
-              <Image
-                style={{ position: "relative", zIndex: "1", border: "3px solid black"}}
+
+              <Image className="header-img w-50" src="https://ik.imagekit.io/ndohertydesign/KING-OF-DIAMONDS-STICKER_4x-8_EMWNYyz5-.png">
+              </Image>
+
+              <div style={{paddingLeft: "1.5rem", display: "flex", flexDirection: "column", justifyContent: "flex-end"}}>
+                <h1 className="header-font m-0">
+                  Check out my design shop!
+                </h1>
+                <p className="paragraph-font mb-2">
+                  I'm currently selling sticker and print designs. More is always on the way.
+                </p>
+                <a href="https://shop.ndoherty.design" className="no-hover"> 
+                  <span className="custom-primary-btn">View shop</span> 
+                </a>
+              </div>
+
+           
+              
+              {/*<Image
+                style={{ position: "relative", zIndex: "1", }}
                 fluid
                 className="header-img"
                 src="https://ik.imagekit.io/ndohertydesign/progress-perfection-posters_6NFrhhWaB.JPG"
-             ></Image> 
+              ></Image> */}
             </div>
           </div>
         </Col>
