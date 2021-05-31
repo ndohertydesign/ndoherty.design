@@ -21,7 +21,7 @@ export default class ScrollingHeader extends Component {
         <Col className="sticky-col p-3" sm={12} md={8}>
           <div style={{ marginTop: "3.7rem" }}>
             <div
-              style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef", padding: "1.5rem" }}
+              style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef", padding: "1.25rem" }}
               className="yellow-bg-margin-left d-flex justify-space-between"
             >
               <div
@@ -36,13 +36,15 @@ export default class ScrollingHeader extends Component {
                 }}
               ></div>
 
-              <Image className="header-img w-50" src="https://ik.imagekit.io/ndohertydesign/KING-OF-DIAMONDS-STICKER_4x-8_EMWNYyz5-.png">
-              </Image>
+              <div className="flex-center-content w-100">
+                <Image className="header-img" fluid src="https://ik.imagekit.io/ndohertydesign/KING-OF-DIAMONDS-STICKER_4x-8_EMWNYyz5-.png">
+                </Image>
+              </div>
 
-              <div style={{paddingLeft: "1.5rem", display: "flex", flexDirection: "column", justifyContent: "flex-end"}}>
-                <h1 className="header-font m-0">
+              <div style={{paddingLeft: "1.25rem", display: "flex", flexDirection: "column", justifyContent: "flex-end"}}>
+                <h3 className="sub-header-font m-0">
                   Check out my design shop!
-                </h1>
+                </h3>
                 <p className="paragraph-font mb-2">
                   I'm currently selling sticker and print designs. More is always on the way.
                 </p>
