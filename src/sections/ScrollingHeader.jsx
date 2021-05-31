@@ -41,7 +41,7 @@ export default class ScrollingHeader extends Component {
                 </Image>
               </div>
 
-              <div style={{paddingLeft: "1.25rem", display: "flex", flexDirection: "column", justifyContent: "flex-end"}}>
+              <div style={{paddingLeft: "1.25rem", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                 <h3 className="sub-header-font m-0">
                   Check out my design shop!
                 </h3>
