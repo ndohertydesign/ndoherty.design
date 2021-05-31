@@ -21,7 +21,7 @@ export default class ScrollingHeader extends Component {
         <Col className="sticky-col p-3" sm={12} md={8}>
           <div style={{ marginTop: "3.7rem" }}>
             <div
-              style={{ position: "relative", border: "3px solid black", backgroundColor: "white", padding: "1.5rem" }}
+              style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef", padding: "1.5rem" }}
               className="yellow-bg-margin-left d-flex justify-space-between"
             >
               <div
