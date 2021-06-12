@@ -37,30 +37,21 @@ export default class ScrollingHeader extends Component {
               ></div>
 
               <div className="flex-center-content w-100">
-                <Image className="header-img" fluid src="https://ik.imagekit.io/ndohertydesign/KING-OF-DIAMONDS-STICKER_4x-8_EMWNYyz5-.png">
+                <Image className="header-img" fluid src="https://ik.imagekit.io/ndohertydesign/king-of-diamonds-graffiti_2x_v0sZVDJEy.png">
                 </Image>
               </div>
 
               <div style={{paddingLeft: "1.25rem", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                 <h3 className="sub-header-font m-0">
-                  Check out my design shop!
+                  Interested in buying some of my work?
                 </h3>
                 <p className="paragraph-font mb-2">
-                  I'm currently selling sticker and print designs. More is always on the way.
+                  I'm currently selling stickers and prints. More is always on the way.
                 </p>
                 <a href="https://shop.ndoherty.design" className="no-hover"> 
                   <span className="custom-primary-btn">View shop</span> 
                 </a>
               </div>
-
-           
-              
-              {/*<Image
-                style={{ position: "relative", zIndex: "1", }}
-                fluid
-                className="header-img"
-                src="https://ik.imagekit.io/ndohertydesign/progress-perfection-posters_6NFrhhWaB.JPG"
-              ></Image> */}
             </div>
           </div>
         </Col>
