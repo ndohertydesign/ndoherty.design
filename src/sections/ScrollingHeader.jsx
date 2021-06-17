@@ -19,9 +19,9 @@ export default class ScrollingHeader extends Component {
     return (
       <Row className="py-5">
         <Col className="sticky-col p-3" sm={12} md={8}>
-          <div style={{ marginTop: "3.7rem" }}>
+          <div className="scrolling-div">
             <div
-              style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef", padding: "1.25rem" }}
+              style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef" }}
               className="yellow-bg-margin-left d-flex justify-space-between"
             >
               <div
@@ -36,22 +36,12 @@ export default class ScrollingHeader extends Component {
                 }}
               ></div>
 
-              <div className="flex-center-content w-100">
-                <Image className="header-img" fluid src="https://ik.imagekit.io/ndohertydesign/king-of-diamonds-graffiti_2x_v0sZVDJEy.png">
-                </Image>
-              </div>
-
-              <div style={{paddingLeft: "1.25rem", display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                <h3 className="sub-header-font m-0">
-                  Interested in buying some of my work?
-                </h3>
-                <p className="paragraph-font mb-2">
-                  I'm currently selling stickers and prints. More is always on the way.
-                </p>
-                <a href="https://shop.ndoherty.design" className="no-hover"> 
-                  <span className="custom-primary-btn">View shop</span> 
-                </a>
-              </div>
+              <Image
+                style={{ position: "relative", zIndex: "1", }}
+                fluid
+                className="header-img"
+                src="https://ik.imagekit.io/ndohertydesign/curb-hop_BNpWz6ByyF.jpg"
+              ></Image> 
             </div>
           </div>
         </Col>

@@ -8,3 +8,7 @@
   z-index: 1000;
   padding: 1rem;
 }
+
+a.custom-nav-link {
+  color: black;
+}

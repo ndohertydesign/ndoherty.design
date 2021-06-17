@@ -23,6 +23,10 @@ a.no-hover:hover {
 
 /* ----------------- */
 
+.scrolling-div {
+  margin-top: 3.7rem;
+}
+
 .pdf-controls {
   display: flex;
   align-items: center;
@@ -208,5 +212,9 @@ a.no-hover:hover {
 
   .small-mb-mobile {
     margin-bottom: 0.25rem !important;
+  }
+
+  .scrolling-div {
+    margin-top: 0;
   }
 }
