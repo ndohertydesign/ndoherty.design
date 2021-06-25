@@ -18,7 +18,7 @@ export default class ScrollingHeader extends Component {
   render() {
     return (
       <Row className="py-5">
-        <Col className="sticky-col p-3" sm={12} md={8}>
+        <Col className="sticky-col p-3" sm={12} md={7}>
           <div className="scrolling-div">
             <div
               style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef" }}
@@ -40,12 +40,12 @@ export default class ScrollingHeader extends Component {
                 style={{ position: "relative", zIndex: "1", }}
                 fluid
                 className="header-img"
-                src="https://ik.imagekit.io/ndohertydesign/curb-hop_BNpWz6ByyF.jpg"
+                src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_sv3YeBXZE.png"
               ></Image> 
             </div>
           </div>
         </Col>
-        <Col className="mt-4 p-3 scrolling-col" xs={12} md={4}>
+        <Col className="mt-4 p-3 scrolling-col" xs={12} md={5}>
           <div className="p-1 pt-3 mt-3 small-mb-mobile">
             <h3 className="sub-header-font">Who am I?</h3>
             {this.props.introCopy.whoAmIText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
