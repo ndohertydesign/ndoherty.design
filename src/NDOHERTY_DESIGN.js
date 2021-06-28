@@ -40,7 +40,7 @@ function NDOHERTY_DESIGN() {
               <div className="text-center">
                 <HashLoader
                   size={100}
-                  color="#ffc107"
+                  color="#df3232"
                   loading={true}
                 />
                 <p className="mt-3 paragraph-font">Loading...</p>

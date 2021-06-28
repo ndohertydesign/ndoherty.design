@@ -1,8 +1,8 @@
 /* Button styling */
 
 .custom-primary-btn {
-  color: #ffc107 !important;
-  border: solid #ffc107 1px;
+  color: #df3232 !important;
+  border: solid #df3232 1px;
   border-radius: 0.25rem;
   width: fit-content;
   line-height: 1.5;
@@ -11,10 +11,10 @@
 }
 
 .custom-primary-btn:hover {
-  background-color: #ffc10733;
+  background-color: #df323233;
   text-decoration: none;
   cursor: pointer;
-  color: #ffc107 !important;
+  color: #df3232 !important;
 }
 
 a.no-hover:hover {
@@ -22,6 +22,10 @@ a.no-hover:hover {
 }
 
 /* ----------------- */
+
+.white-text {
+  color: white;
+}
 
 .scrolling-div {
   margin-top: 3.7rem;
@@ -42,11 +46,11 @@ a.no-hover:hover {
 
 .blog-title-select:hover {
   cursor: pointer;
-  color: #ffc107;
+  color: #df3232;
 }
 
 .blog-title-selected {
-  color: #ffc107;
+  color: #df3232;
 }
 
 .blog-image-lg {

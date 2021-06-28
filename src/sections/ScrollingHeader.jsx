@@ -21,48 +21,30 @@ export default class ScrollingHeader extends Component {
         <Col className="sticky-col p-3" sm={12} md={7}>
           <div className="scrolling-div">
             <div
-              style={{ position: "relative", border: "3px solid black", backgroundColor: "#efefef" }}
-              className="yellow-bg-margin-left d-flex justify-space-between"
+              style={{ position: "relative", border: "3px solid black", backgroundColor: "#000", padding: "2rem" }}
+              className="d-flex justify-space-between"
             >
-              <div
-                className="w-100 h-100"
-                style={{
-                  zIndex: -1,
-                  position: "absolute",
-                  left: "-2rem",
-                  top: "2rem",
-                  backgroundColor: "black",
-                  opacity: "100%",
-                }}
-              ></div>
+             
 
-              <Image
+              <h1 id="intro-text" className='header-font mb-0 white-text text-center'>
+                I'm a&nbsp;graphic & web&nbsp;designer, a&nbsp;developer, and a&nbsp;student who loves to&nbsp;create.
+              </h1>
+
+              {/*<Image
                 style={{ position: "relative", zIndex: "1", }}
                 fluid
                 className="header-img"
                 src="https://ik.imagekit.io/ndohertydesign/sticky-header-img_sv3YeBXZE.png"
-              ></Image> 
+              ></Image>*/}
             </div>
           </div>
         </Col>
-        <Col className="mt-4 p-3 scrolling-col" xs={12} md={5}>
-          <div className="p-1 pt-3 mt-3 small-mb-mobile">
-            <h3 className="sub-header-font">Who am I?</h3>
-            {this.props.introCopy.whoAmIText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
-          </div>
-          <hr className="divider" />
-          <div className="p-1 small-mb-mobile">
-            <h3 className="sub-header-font">What do I do?</h3>
-              {this.props.introCopy.whatIDoText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
-          </div>
-          <hr className="divider" />
-          <div className="p-1">
-            <h3 className="sub-header-font">How can I help you?</h3>
-            {this.props.introCopy.howCanIHelpText.split("\\n").map((text) => <p className="paragraph-font mb-2">{text}</p>)}
-            <div id="process-scroll-button" className="py-1">
-              <span className="custom-primary-btn">More about my freelancing!</span>
-            </div>
-          </div>
+        <Col className="mt-4 p-3 py-4 scrolling-col" xs={12} md={5}>
+            {
+              this.props.headerImages.map((image) => {
+                return <Image className="my-3" fluid src={image.image} />;
+              })
+            }
         </Col>
       </Row>
     );
