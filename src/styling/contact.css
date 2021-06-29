@@ -14,7 +14,7 @@
 .contact-form > input:focus,
 .contact-form > textarea:focus {
   outline-offset: -2px;
-  outline: #df3232 auto 5px;
+  outline: #f5d33c auto 5px;
 }
 
 .contact-form > input,
@@ -26,8 +26,8 @@
 }
 
 .contact-form > a {
-  color: #df3232;
-  border: solid #df3232 1px;
+  color: #f5d33c;
+  border: solid #f5d33c 1px;
   border-radius: 0.25rem;
   width: fit-content;
   line-height: 1.5;
@@ -39,6 +39,6 @@
 }
 
 .contact-form > a:hover {
-  background-color: #df323233;
+  background-color: #f5d33c33;
   text-decoration: none;
 }

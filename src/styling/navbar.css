@@ -12,3 +12,7 @@
 a.custom-nav-link {
   color: black;
 }
+
+.nav-container {
+  flex-direction: row;
+}

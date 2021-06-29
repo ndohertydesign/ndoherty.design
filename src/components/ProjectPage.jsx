@@ -24,7 +24,7 @@ export default function ProjectPage(props) {
               <div className="text-center">
                 <HashLoader
                   size={100}
-                  color="#df3232"
+                  color="#f5d33c"
                   loading={true}
                 />
                 <p className="mt-3 paragraph-font">Loading...</p>
