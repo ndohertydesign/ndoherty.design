@@ -39,12 +39,21 @@ export default class ScrollingHeader extends Component {
             </div>
           </div>
         </Col>
-        <Col className="mt-4 p-3 py-4 scrolling-col" xs={12} md={5}>
+        <Col className="p-3 py-4 scrolling-col" xs={12} md={5}>
+          <div style={{display: "grid", rowGap: "10px", columnGap: "10px", gridTemplateColumns: "repeat(4, 1fr)", gridTemplateRows: "repeat(10, 100px)", marginTop: "3.2rem"}}>
             {
               this.props.headerImages.map((image) => {
-                return <Image className="my-3" fluid src={image.image} />;
+                return (
+                  <div style={{display: "grid", gridColumnStart: image.colstart, gridColumnEnd: image.colend, gridRowStart: image.rowstart, gridRowEnd: image.rowend}}>
+                    <Image style={{width: "100%", height: "100%", objectFit: image.objectfit}} src={image.image} />
+                  </div>
+                )
+
+                
+                
               })
             }
+          </div>
         </Col>
       </Row>
     );

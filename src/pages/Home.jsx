@@ -12,9 +12,9 @@ export default function Home(props) {
   return (
     <div>
       <ScrollingHeader headerImages={props.dynamicContent.intro_copy['header-images']}  />
-      <About introCopy={props.dynamicContent.intro_copy} />
       <FeaturedProjects featuredProjects={props.dynamicContent.projects['Featured-Projects']} />
       <OtherProjects projectTeasers={props.dynamicContent.projects['Other-Projects']} />
+      <About introCopy={props.dynamicContent.intro_copy} />
       <Contact />
     </div>
   );
