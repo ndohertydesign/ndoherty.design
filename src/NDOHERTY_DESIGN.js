@@ -4,14 +4,17 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { HashLoader } from "react-spinners/";
 
 import Home from "./pages/Home";
-import Footer from "./sections/Footer";
+import Footer from "./components/Footer";
 
 import "./styling/typography.css";
 import "./styling/utilities.css";
 import "./styling/contact.css";
-import Blog from "./components/blog/Blog";
+import "./styling/animations.css";
 import ProjectPage from "./components/ProjectPage";
 import Navbar from "./components/Navbar";
+import SidebarContainer from "./components/SidebarContainer";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function NDOHERTY_DESIGN() {
   const scrollFunction = function () {
@@ -40,7 +43,7 @@ function NDOHERTY_DESIGN() {
               <div className="text-center">
                 <HashLoader
                   size={100}
-                  color="#f5d33c"
+                  color="#000000"
                   loading={true}
                 />
                 <p className="mt-3 paragraph-font">Loading...</p>
@@ -55,38 +58,56 @@ function NDOHERTY_DESIGN() {
     <div>
     <Navbar />
 
+    <SidebarContainer>
+
+      <Router>
+          <Switch>
+            <Route 
+            exact 
+            path="/"
+            render={(props) => (
+              <Home {...props} dynamicContent={dynamicContent}/>
+            )}/>
+
+            <Route
+            exact
+            path="/about"
+            render={(props) => (
+              <About {...props} introCopy={dynamicContent.intro_copy}/>
+            )}/>
+
+            <Route
+            exact
+            path="/contact"
+            component={Contact}
+            />
+
+            {dynamicContent.projects['Featured-Projects'].map((projectContent) => 
+                    (<Route 
+                      exact={true}
+                      path={projectContent.routinglink}
+                      render={(props) => (
+                        <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
+                      )}/>)
+            )}
+
+            {dynamicContent.projects['Other-Projects'].map((projectContent) => {
+              return <Route 
+                      exact={true}
+                      path={projectContent.routinglink}
+                      render={(props) => (
+                        <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
+                      )}/>
+            })}
+          </Switch>
+        </Router>
+    </SidebarContainer>
+    <Footer />
+
     <Container className="mt-3 pt-3">
      
-      <Router>
-        <Switch>
-          <Route 
-          exact 
-          path="/"
-          render={(props) => (
-            <Home {...props} dynamicContent={dynamicContent}/>
-          )}/>
+      
 
-          {dynamicContent.projects['Featured-Projects'].map((projectContent) => 
-                  (<Route 
-                    exact={true}
-                    path={projectContent.routinglink}
-                    render={(props) => (
-                      <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
-                    )}/>)
-          )}
-
-          {dynamicContent.projects['Other-Projects'].map((projectContent) => {
-            return <Route 
-                    exact={true}
-                    path={projectContent.routinglink}
-                    render={(props) => (
-                      <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
-                    )}/>
-          })}
-        <Route exact path="/blog" component={Blog} /> 
-        </Switch>
-      </Router>
-      <Footer />
     </Container>
     </div>
   );

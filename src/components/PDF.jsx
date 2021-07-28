@@ -64,7 +64,7 @@ export default function PDF(props) {
   }
 
   return (
-    <div ref={divRef} className="w-100 mb-4">
+    <div ref={divRef} className="w-100 mb-4 mt-2">
         {renderPDFDoc()}
         <div className="pdf-controls">
           {pageNumber !== 1 && <a className="custom-primary-btn" onClick={changePage("prev")}> Prev </a>}
