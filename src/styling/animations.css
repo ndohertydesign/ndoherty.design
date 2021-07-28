@@ -1,0 +1,26 @@
+.other-proj-anim {
+  height: 100px !important;
+  transition: height 150ms ease-out;
+}
+
+.other-proj-anim:hover,
+.other-proj-anim:active {
+  height: 130px !important;
+  transition: height 150ms ease-out;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .featured-project-card:hover {
+    filter: invert(100%);
+    transition: 150ms linear;
+    border-color: white !important;
+    cursor: pointer;
+  }
+
+  .featured-project-card {
+    filter: invert(0%);
+    background-color: white;
+    transition: 150ms linear;
+  }
+}
