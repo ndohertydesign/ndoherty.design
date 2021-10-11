@@ -33,6 +33,7 @@ function NDOHERTY_DESIGN() {
       .then((response) => response.json())
       .then((content) => {
         setDynamicContent(content)
+        console.log(content)
         setLoading(false)
       })
     }
@@ -51,8 +52,8 @@ function NDOHERTY_DESIGN() {
            </div>
   }
 
-  dynamicContent.projects['Featured-Projects'] = dynamicContent.projects['Featured-Projects'].filter((project) => project.published)
-  dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project.published)
+  dynamicContent.projects['Featured-Projects'] = dynamicContent.projects['Featured-Projects'].filter((project) => project['Published?'])
+  dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project['Published?'])
 
   return (
     <div>
