@@ -7,9 +7,9 @@ export default class Navbar extends Component {
   render() {
     return (
       <div className="custom-navbar">
-        <Container className="d-flex nav-container justify-content-center align-items-center">
-          <a className="custom-nav-link" href="#"><h3 className="nav-title">NDOHERTY.DESIGN</h3></a>
-        </Container>
+          <a className="custom-nav-link" href="#"><h3 className="nav-title fw-300">Portfolio</h3></a>
+          <a className="custom-nav-link" href="#/about"><h3 className="nav-title fw-300">About</h3></a>
+          <a className="custom-nav-link" href="#/contact"><h3 className="nav-title fw-300">Contact</h3></a>
       </div>
     )
   }

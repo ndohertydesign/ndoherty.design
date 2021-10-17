@@ -10,17 +10,31 @@
   cursor: pointer;
 }
 
+.loading-font {
+  animation: loading-anim 4s ease-in-out infinite;
+}
+
+@keyframes loading-anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (min-width: 769px) {
   .featured-project-card:hover {
-    filter: invert(100%);
-    transition: 150ms linear;
-    border-color: white !important;
+    transform: scale(1.03);
+    transition: 150ms ease-in-out;
     cursor: pointer;
   }
 
   .featured-project-card {
-    filter: invert(0%);
-    background-color: white;
-    transition: 150ms linear;
+    transform: scale(1);
+    transition: 150ms ease-in-out;
   }
 }

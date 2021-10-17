@@ -1,13 +1,7 @@
 .custom-navbar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: black;
-  color: white;
-  width: 100vw;
-  z-index: 1000;
-  padding: 1rem;
-  box-shadow: #2b2b2bee 3px 0px 5px 0px;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: right;
 }
 
 a.custom-nav-link {

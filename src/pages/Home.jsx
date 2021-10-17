@@ -8,8 +8,11 @@ export default function Home(props) {
 
   return (
     <div>
+
+      <h1 className="main-title header-font mt-5">My Projects</h1>
+  
+
       <FeaturedProjects featuredProjects={props.dynamicContent.projects['Featured-Projects']} />
-      <OtherProjects projectTeasers={props.dynamicContent.projects['Other-Projects']} />
     </div>
   );
 }

@@ -2,6 +2,10 @@ body {
   color: black;
 }
 
+.website-margin {
+  margin: 0px 30px 150px;
+}
+
 /* Button styling */
 
 .custom-primary-btn {
@@ -46,18 +50,15 @@ body {
   max-width: 55%;
   max-height: 100%;
   height: auto;
-  margin-left: 20px;
   object-fit: cover;
 }
 
 .featured-project-card {
   width: 100%;
-  height: 600px;
-  border-bottom: 6px solid black;
-  padding: 30px;
+  min-height: 200px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  margin: 75px 0px;
 }
 
 .featured-project-text {
@@ -65,6 +66,7 @@ body {
   flex-direction: column;
   justify-content: center;
   max-width: 40%;
+  padding-left: 15px;
 }
 
 .divider {
@@ -94,6 +96,10 @@ body {
     display: none;
   }
 
+  .website-margin {
+    margin: 0px 15px 150px;
+  }
+
   .featured-project-img {
     max-width: 100%;
     margin-bottom: 20px;
@@ -102,6 +108,7 @@ body {
 
   .featured-project-text {
     min-width: 100%;
+    padding-left: 0px;
   }
 
   .featured-project-card {

@@ -13,7 +13,7 @@ export default function OtherProjects(props) {
     <div>
         {props.projectTeasers.map((teaserInfo, index) => {
           return (
-            <div className="other-proj-anim" style={{width: "100%", backgroundColor: index % 2 === 0 ? "white" : "black", color: index % 2 === 0 ? "black" : "white", padding: "20px", display: "flex", alignItems: "center", }} onClick={onClickFunction(teaserInfo.routinglink)}>
+            <div className="other-proj-anim" style={{width: "100%", backgroundColor: index % 2 === 0 ? "white" : "black", color: index % 2 === 0 ? "black" : "white", display: "flex", alignItems: "center", }} onClick={onClickFunction(teaserInfo.routinglink)}>
               <div>
                 <h3 className="sub-header-font mb-0">{teaserInfo.name}</h3>
                   {teaserInfo.tags.map((tag) => 

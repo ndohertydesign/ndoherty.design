@@ -40,15 +40,8 @@ function NDOHERTY_DESIGN() {
   });
 
   if (loading) {
-    return <div style={{height: "100vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
-              <div className="text-center">
-                <HashLoader
-                  size={100}
-                  color="#000000"
-                  loading={true}
-                />
-                <p className="mt-3 paragraph-font">Loading...</p>
-              </div>
+    return <div style={{height: "100vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+              <p className="mt-4 loading-font">Loading...</p>
            </div>
   }
 
@@ -56,11 +49,8 @@ function NDOHERTY_DESIGN() {
   dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project['Published?'])
 
   return (
-    <div>
+    <div className="website-margin">
     <Navbar />
-
-    <SidebarContainer>
-
       <Router>
           <Switch>
             <Route 
@@ -102,14 +92,6 @@ function NDOHERTY_DESIGN() {
             })}
           </Switch>
         </Router>
-    </SidebarContainer>
-    <Footer />
-
-    <Container className="mt-3 pt-3">
-     
-      
-
-    </Container>
     </div>
   );
 }
