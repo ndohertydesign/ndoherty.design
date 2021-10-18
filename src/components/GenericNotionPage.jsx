@@ -3,7 +3,7 @@ import { Row, Col, Image } from "react-bootstrap";
 import { HashLoader } from "react-spinners/";
 import PDF from "./PDF";
 
-export default function ProjectPage(props) {
+export default function GenericNotionPage(props) {
 
   const [pageContent, setPageContent] = useState({});
   const [loading, setLoading] = useState(true);
@@ -30,7 +30,7 @@ export default function ProjectPage(props) {
       <Row className="m-0">
         <Col xs={12} className="p-0">
           <div className="flex-center-content justify-space-between">
-            <h1 className="header-font mb-0">{props.title}</h1>
+            <h1 className="header-font">{props.title}</h1> 
           </div>
         </Col>
       </Row>

@@ -10,11 +10,12 @@ import "./styling/typography.css";
 import "./styling/utilities.css";
 import "./styling/contact.css";
 import "./styling/animations.css";
-import ProjectPage from "./components/ProjectPage";
+import GenericNotionPage from "./components/GenericNotionPage";
 import Navbar from "./components/Navbar";
 import SidebarContainer from "./components/SidebarContainer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function NDOHERTY_DESIGN() {
   const scrollFunction = function () {
@@ -48,6 +49,8 @@ function NDOHERTY_DESIGN() {
   dynamicContent.projects['Featured-Projects'] = dynamicContent.projects['Featured-Projects'].filter((project) => project['Published?'])
   dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project['Published?'])
 
+  dynamicContent.blog_posts['Blog-Posts'] =  dynamicContent.blog_posts['Blog-Posts'].filter((blogPost) => blogPost['Published?'])
+
   return (
     <div className="website-margin">
     <Navbar />
@@ -73,12 +76,19 @@ function NDOHERTY_DESIGN() {
             component={Contact}
             />
 
+            <Route
+            exact
+            path="/blog"
+            render={(props) => (
+              <Blog {...props} blogPosts={dynamicContent.blog_posts['Blog-Posts']}/>
+            )}/>
+
             {dynamicContent.projects['Featured-Projects'].map((projectContent) => 
                     (<Route 
                       exact={true}
                       path={projectContent.routinglink}
                       render={(props) => (
-                        <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
+                        <GenericNotionPage {...props} pageID={projectContent.id} title={projectContent.name}/>
                       )}/>)
             )}
 
@@ -87,7 +97,18 @@ function NDOHERTY_DESIGN() {
                       exact={true}
                       path={projectContent.routinglink}
                       render={(props) => (
-                        <ProjectPage {...props} pageID={projectContent.id} title={projectContent.name}/>
+                        <GenericNotionPage {...props} pageID={projectContent.id} title={projectContent.name}/>
+                      )}/>
+            })}
+
+            {dynamicContent.blog_posts['Blog-Posts'].map((blogPost) => {
+              console.log(blogPost)
+              return <Route 
+                      key={blogPost.id}
+                      exact={true}
+                      path={"/blog" + blogPost.routinglink}
+                      render={(props) => (
+                        <GenericNotionPage {...props} pageID={blogPost.id} title={blogPost.Name}/>
                       )}/>
             })}
           </Switch>

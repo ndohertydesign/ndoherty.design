@@ -33,6 +33,12 @@
     cursor: pointer;
   }
 
+  .blog-post-card:hover {
+    transform: scale(1.03);
+    transition: 150ms ease-in-out;
+    cursor: pointer;
+  }
+
   .featured-project-card {
     transform: scale(1);
     transition: 150ms ease-in-out;

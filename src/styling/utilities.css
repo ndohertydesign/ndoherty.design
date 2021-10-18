@@ -69,6 +69,18 @@ body {
   padding-left: 25px;
 }
 
+.blog-post-card {
+  width: 100%;
+  min-height: 200px;
+  margin: 50px 0px;
+}
+
+.blog-post-card:first-of-type {
+  width: 100%;
+  min-height: 200px;
+  margin: 75px 0px 50px;
+}
+
 .divider {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
