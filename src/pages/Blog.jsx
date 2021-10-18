@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Col } from 'react-bootstrap'
 
 export default class Blog extends Component {
 
@@ -15,7 +16,7 @@ export default class Blog extends Component {
       return (
         <div>
           {this.props.blogPosts.map((blogPost) => {
-            return (<div className="blog-post-card" onClick={this.handleBlogLink('/blog' + blogPost.routinglink)}>
+            return (<Col xs={12} lg={8} className="blog-post-card px-0" onClick={this.handleBlogLink('/blog' + blogPost.routinglink)}>
                     <h3 className="sub-header-font">
                       {blogPost.Name}
                     </h3>
@@ -23,7 +24,7 @@ export default class Blog extends Component {
                     <p className="paragraph-font">
                       {blogPost.Description}
                     </p>
-                  </div>)
+                  </Col>)
           })}
         </div>)
     }
