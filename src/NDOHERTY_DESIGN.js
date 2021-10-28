@@ -47,6 +47,9 @@ function NDOHERTY_DESIGN() {
   }
 
   dynamicContent.projects['Featured-Projects'] = dynamicContent.projects['Featured-Projects'].filter((project) => project['Published?'])
+  dynamicContent.projects['Featured-Projects'].sort((firstProj, secondProj) => firstProj.order - secondProj.order)
+
+
   dynamicContent.projects['Other-Projects'] = dynamicContent.projects['Other-Projects'].filter((project) => project['Published?'])
 
   dynamicContent.blog_posts['Blog-Posts'] =  dynamicContent.blog_posts['Blog-Posts'].filter((blogPost) => blogPost['Published?'])
