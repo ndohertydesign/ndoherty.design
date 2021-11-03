@@ -12,10 +12,11 @@ export default class FeaturedProjects extends Component {
 
 
   render() {
+
     return (
       <div>
 
-        {this.props.featuredProjects.map((projectInfo, index) => {
+        {this.props.featuredProjects.filter((projectInfo) => !projectInfo.Hidden).map((projectInfo, index) => {
           return (
             <div key={index} className="featured-project-card" onClick={this.handleProjectLink(projectInfo.routinglink)}>
                   <Image className="featured-project-img" src={projectInfo.image[0]} />
